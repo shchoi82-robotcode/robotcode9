@@ -1,0 +1,1427 @@
+gcc -Wall -W -c main.c
+gcc -Wall -W -c choi.c
+gcc -Wall -W -c kim.c
+gcc -Wall -W -c lee.c
+gcc -Wall -W main.o choi.o kim.o lee.o -o prog.out
+# GNU Make 4.1
+# arm-unknown-linux-gnueabihf 빌드
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# 라이선스 GPLv3+: GNU GPL 버전 3 또는 이후 <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# 메이크 데이터베이스, Sun Jul  1 21:22:25 2018
+에 표시
+# 변수
+
+# 자동
+<D = $(patsubst %/,%,$(dir $<))
+# 자동
+?F = $(notdir $?)
+# 기본값
+.SHELLFLAGS := -c
+# 환경
+INFINALITY_FT_BOLD_EMBOLDEN_Y_VALUE = 0
+# 기본값
+CWEAVE = cweave
+# 환경
+INFINALITY_FT_GLOBAL_EMBOLDEN_X_VALUE = 0
+# 자동
+?D = $(patsubst %/,%,$(dir $?))
+# 자동
+@D = $(patsubst %/,%,$(dir $@))
+# 자동
+@F = $(notdir $@)
+# 기본값
+MAKE_VERSION := 4.1
+# 자동
+^D = $(patsubst %/,%,$(dir $^))
+# 메이크파일
+CURDIR := /home/pi/robotcode9/chap04/make_ex2
+# 메이크파일
+SHELL = /bin/sh
+# 기본값
+RM = rm -f
+# 기본값
+CO = co
+# 기본값
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# 환경
+INFINALITY_FT_AUTOHINT_INCREASE_GLYPH_HEIGHTS = true
+# 환경
+_ = /usr/bin/make
+# 기본값
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# 기본값
+LINK.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 기본값
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# 기본값
+OUTPUT_OPTION = -o $@
+# 기본값
+COMPILE.cpp = $(COMPILE.cc)
+# 메이크파일 ('Makefile'에서, 1번째 줄)
+MAKEFILE_LIST :=  Makefile
+# 'override' 지시자
+GNUMAKEFLAGS := 
+# 기본값
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 환경
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# 기본값
+CC = cc
+# 기본값
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# 기본값
+CPP = $(CC) -E
+# 환경
+INFINALITY_FT_USE_KNOWN_SETTINGS_ON_SELECTED_FONTS = true
+# 기본값
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 환경
+SSH_CONNECTION = 172.30.1.26 63209 172.30.1.8 22
+# 환경
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+# 환경
+INFINALITY_FT_STEM_SNAPPING_SLIDING_SCALE = 40
+# 기본값
+LD = ld
+# 환경
+INFINALITY_FT_FRINGE_FILTER_STRENGTH = 0
+# 기본값
+TEXI2DVI = texi2dvi
+# 기본값
+YACC = yacc
+# 환경
+SSH_TTY = /dev/pts/0
+# 환경
+XDG_RUNTIME_DIR = /run/user/1000
+# 기본값
+ARFLAGS = rv
+# 환경
+TEXTDOMAIN = Linux-PAM
+# 기본값
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 환경
+INFINALITY_FT_BOLD_EMBOLDEN_X_VALUE = 0
+# 기본값
+LINT = lint
+# 기본값
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# 기본값
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# 기본값
+YACC.m = $(YACC) $(YFLAGS)
+# 기본값
+YACC.y = $(YACC) $(YFLAGS)
+# 환경
+INFINALITY_FT_AUTOHINT_VERTICAL_STEM_DARKEN_STRENGTH = 25
+# 기본값
+AR = ar
+# 기본값
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# 기본값
+TANGLE = tangle
+# 환경
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# 기본값
+GET = get
+# 자동
+%F = $(notdir $%)
+# 환경
+DISPLAY = localhost:10.0
+# 기본값
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# 기본값
+CTANGLE = ctangle
+# 기본값
+.LIBPATTERNS = lib%.so lib%.a
+# 환경
+INFINALITY_FT_USE_VARIOUS_TWEAKS = true
+# 기본값
+LINK.C = $(LINK.cc)
+# 환경
+PWD = /home/pi/robotcode9/chap04/make_ex2
+# 기본값
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# 기본값
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# 자동
+*D = $(patsubst %/,%,$(dir $*))
+# 기본값
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 기본값
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# 환경
+HOME = /home/pi
+# 환경
+INFINALITY_FT_CHROMEOS_STYLE_SHARPENING_STRENGTH = 0
+# 환경
+LOGNAME = pi
+# 환경
+INFINALITY_FT_BRIGHTNESS = 0
+# 환경
+INFINALITY_FT_CONTRAST = 0
+# 환경
+MAKELEVEL := 0
+# 기본값
+COMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# 기본값
+MAKE = $(MAKE_COMMAND)
+# 환경
+INFINALITY_FT_FILTER_PARAMS = 11 22 38 22 11
+# 환경
+SHLVL = 1
+# 기본값
+AS = as
+# 기본값
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# 기본값
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# 환경
+XDG_SESSION_ID = c3
+# 환경
+USER = pi
+# 기본값
+FC = f77
+# 메이크파일
+.DEFAULT_GOAL := prog.out
+# 자동
+%D = $(patsubst %/,%,$(dir $%))
+# 환경
+INFINALITY_FT_STEM_ALIGNMENT_STRENGTH = 25
+# 기본값
+WEAVE = weave
+# 기본값
+MAKE_COMMAND := make
+# 기본값
+LINK.cpp = $(LINK.cc)
+# 기본값
+F77 = $(FC)
+# 환경
+OLDPWD = /home/pi/robotcode9/chap04
+# 기본값
+.VARIABLES := 
+# 기본값
+PC = pc
+# 자동
+*F = $(notdir $*)
+# 기본값
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# 기본값
+LEX = lex
+# 메이크파일
+MAKEFLAGS = p
+# 환경
+MFLAGS = -p
+# 환경
+SSH_CLIENT = 172.30.1.26 63209 22
+# 환경
+MAIL = /var/mail/pi
+# 기본값
+LEX.l = $(LEX) $(LFLAGS) -t
+# 기본값
+LEX.m = $(LEX) $(LFLAGS) -t
+# 자동
++D = $(patsubst %/,%,$(dir $+))
+# 환경
+INFINALITY_FT_GRAYSCALE_FILTER_STRENGTH = 0
+# 기본값
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# 자동
++F = $(notdir $+)
+# 기본값
+M2C = m2c
+# 환경
+INFINALITY_FT_GLOBAL_EMBOLDEN_Y_VALUE = 0
+# 기본값
+MAKEFILES := 
+# 기본값
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# 자동
+<F = $(notdir $<)
+# 기본값
+CXX = g++
+# 환경
+INFINALITY_FT_WINDOWS_STYLE_SHARPENING_STRENGTH = 10
+# 기본값
+COFLAGS = 
+# 환경
+INFINALITY_FT_STEM_FITTING_STRENGTH = 25
+# 기본값
+COMPILE.C = $(COMPILE.cc)
+# 자동
+^F = $(notdir $^)
+# 기본값
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# 환경
+INFINALITY_FT_AUTOHINT_HORIZONTAL_STEM_DARKEN_STRENGTH = 10
+# 기본값
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 기본값
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# 기본값
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# 환경
+INFINALITY_FT_AUTOHINT_SNAP_STEM_HEIGHT = 100
+# 기본값
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# 기본값
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# 기본값
+.RECIPEPREFIX := 
+# 기본값
+MAKEINFO = makeinfo
+# 기본값
+MAKE_TERMERR := /dev/pts/0
+# 기본값
+OBJC = cc
+# 기본값
+MAKE_HOST := arm-unknown-linux-gnueabihf
+# 환경
+INFINALITY_FT_GAMMA_CORRECTION = 0 100
+# 기본값
+TEX = tex
+# 환경
+LANG = ko_KR.UTF-8
+# 환경
+TERM = xterm
+# 기본값
+F77FLAGS = $(FFLAGS)
+# 기본값
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# 변수 모음 해시 테이블 통계:
+# 로드=138/1024=13%, 다시 해시=0, 충돌=15/179=8%
+
+# 패턴을 위한 변수 값
+
+# 패턴을 위한 변수 값이 없습니다.
+
+# 디렉터리
+
+# SCCS: stat을 할 수 없었습니다.
+# . (장치 45826, 아이노드 263831): 14 파일, 31 불가능.
+# RCS: stat을 할 수 없었습니다.
+
+# 14 파일, 31 디렉토리 3개에서 불가능.
+
+# 묵시적 규칙
+
+%.out:
+
+%.a:
+
+%.ln:
+
+%.o:
+
+%: %.o
+#  실행할 명령어 (내장):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  실행할 명령어 (내장):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  실행할 명령어 (내장):
+	$(LINT.c) -C$* $<
+
+%.o: %.c
+#  실행할 명령어 (내장):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  실행할 명령어 (내장):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  실행할 명령어 (내장):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.C:
+
+%: %.C
+#  실행할 명령어 (내장):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.C
+#  실행할 명령어 (내장):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  실행할 명령어 (내장):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+#  실행할 명령어 (내장):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  실행할 명령어 (내장):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  실행할 명령어 (내장):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  실행할 명령어 (내장):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  실행할 명령어 (내장):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.F:
+
+%: %.F
+#  실행할 명령어 (내장):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.F
+#  실행할 명령어 (내장):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+%.f: %.F
+#  실행할 명령어 (내장):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+%.m:
+
+%: %.m
+#  실행할 명령어 (내장):
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.m
+#  실행할 명령어 (내장):
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+%.r:
+
+%: %.r
+#  실행할 명령어 (내장):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  실행할 명령어 (내장):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  실행할 명령어 (내장):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  실행할 명령어 (내장):
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+%.c: %.y
+#  실행할 명령어 (내장):
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  실행할 명령어 (내장):
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+%.c: %.l
+#  실행할 명령어 (내장):
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+%.r: %.l
+#  실행할 명령어 (내장):
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+%.ym:
+
+%.m: %.ym
+#  실행할 명령어 (내장):
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+%.yl:
+
+%.s:
+
+%: %.s
+#  실행할 명령어 (내장):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  실행할 명령어 (내장):
+	$(COMPILE.s) -o $@ $<
+
+%.S:
+
+%: %.S
+#  실행할 명령어 (내장):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.S
+#  실행할 명령어 (내장):
+	$(COMPILE.S) -o $@ $<
+
+%.s: %.S
+#  실행할 명령어 (내장):
+	$(PREPROCESS.S) $< > $@
+
+%.mod:
+
+%: %.mod
+#  실행할 명령어 (내장):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  실행할 명령어 (내장):
+	$(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  실행할 명령어 (내장):
+	$(COMPILE.def) -o $@ $<
+
+%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  실행할 명령어 (내장):
+	$(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  실행할 명령어 (내장):
+	$(CTANGLE) $< - $@
+
+%.tex: %.w
+#  실행할 명령어 (내장):
+	$(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  실행할 명령어 (내장):
+	$(TANGLE) $<
+
+%.tex: %.web
+#  실행할 명령어 (내장):
+	$(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  실행할 명령어 (내장):
+	cat $< >$@ 
+	 chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  실행할 명령어 (내장):
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  실행할 명령어 (내장):
+	@rm -f $@ 
+	 cp $< $@
+
+%.c: %.w %.ch
+#  실행할 명령어 (내장):
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  실행할 명령어 (내장):
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  실행할 명령어 (내장):
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  실행할 명령어 (내장):
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  실행할 명령어 (내장):
+	$(CHECKOUT,v)
+
+%:: s.%
+#  실행할 명령어 (내장):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  실행할 명령어 (내장):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 묵시적 규칙 92개, 5 (5.4%) 터미널.
+
+# 파일
+
+# 타겟이 아님:
+.web.p:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(TANGLE) $<
+
+# 타겟이 아님:
+.l.r:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+# 타겟이 아님:
+.dvi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.ym:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.f.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.l:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.m:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.ln:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.y:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.def.sym:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.def) -o $@ $<
+
+# 타겟이 아님:
+.p.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.p:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.txinfo.dvi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# 타겟이 아님:
+main.c:
+#  묵시적 규칙 탐색이 완료되었습니다.
+#  마지막 변경 2018-07-01 20:53:11.076186472
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+
+# 타겟이 아님:
+.a:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.yl:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.l.ln:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+# 타겟이 아님:
+.F.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.texi.info:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# 타겟이 아님:
+.w.c:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(CTANGLE) $< - $@
+
+# 타겟이 아님:
+.texi.dvi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# 타겟이 아님:
+.ch:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.m.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.cc:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.cc.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.def:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.c.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+Makefile:
+#  묵시적 규칙 탐색이 완료되었습니다.
+#  마지막 변경 2018-07-01 19:58:44.889686017
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+
+# 타겟이 아님:
+.r.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.r:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.ym.m:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+# 타겟이 아님:
+.y.ln:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+choi.o: choi.c
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  묵시적/고정 패턴 스템: 'choi'
+#  마지막 변경 2018-07-01 21:22:25.331642438
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+# 자동
+# @ := choi.o
+# 자동
+# % := 
+# 자동
+# * := choi
+# 자동
+# + := choi.c
+# 자동
+# | := 
+# 자동
+# < := choi.c
+# 자동
+# ^ := choi.c
+# 자동
+# ? := choi.c
+# 변수 모음 해시 테이블 통계:
+# 로드=8/32=25%, 다시 해시=0, 충돌=1/11=9%
+#  실행할 명령어 ('Makefile'에서, 8번째 줄):
+	gcc -Wall -W -c choi.c
+
+# 타겟이 아님:
+.elc:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.l.c:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+# 타겟이 아님:
+.out:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.C:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.r.f:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.S:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.texinfo.info:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# 타겟이 아님:
+.c:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.w.tex:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(CWEAVE) $< - $@
+
+# 타겟이 아님:
+.c.ln:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINT.c) -C$* $<
+
+# 타겟이 아님:
+.s.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.s) -o $@ $<
+
+# 타겟이 아님:
+.s:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.texinfo.dvi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# 타겟이 아님:
+.el:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.lm.m:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	@$(RM) $@ 
+	 $(LEX.m) $< > $@
+
+# 타겟이 아님:
+.y.c:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+# 타겟이 아님:
+.web.tex:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(WEAVE) $<
+
+# 타겟이 아님:
+.texinfo:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.DEFAULT:
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.h:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+kim.o: kim.c
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  묵시적/고정 패턴 스템: 'kim'
+#  마지막 변경 2018-07-01 21:22:25.431641039
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+# 자동
+# @ := kim.o
+# 자동
+# % := 
+# 자동
+# * := kim
+# 자동
+# + := kim.c
+# 자동
+# | := 
+# 자동
+# < := kim.c
+# 자동
+# ^ := kim.c
+# 자동
+# ? := kim.c
+# 변수 모음 해시 테이블 통계:
+# 로드=8/32=25%, 다시 해시=0, 충돌=1/11=9%
+#  실행할 명령어 ('Makefile'에서, 11번째 줄):
+	gcc -Wall -W -c kim.c
+
+lee.o: lee.c
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  묵시적/고정 패턴 스템: 'lee'
+#  마지막 변경 2018-07-01 21:22:25.53163964
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+# 자동
+# @ := lee.o
+# 자동
+# % := 
+# 자동
+# * := lee
+# 자동
+# + := lee.c
+# 자동
+# | := 
+# 자동
+# < := lee.c
+# 자동
+# ^ := lee.c
+# 자동
+# ? := lee.c
+# 변수 모음 해시 테이블 통계:
+# 로드=8/32=25%, 다시 해시=0, 충돌=1/11=9%
+#  실행할 명령어 ('Makefile'에서, 14번째 줄):
+	gcc -Wall -W -c lee.c
+
+# 타겟이 아님:
+.tex.dvi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(TEX) $<
+
+# 타겟이 아님:
+.cpp.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.cpp:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+clean:
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 ('Makefile'에서, 17번째 줄):
+	rm *.o
+	rm prog.out
+
+# 타겟이 아님:
+.C.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.texi:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.txinfo:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+choi.c:
+#  묵시적 규칙 탐색이 완료되었습니다.
+#  마지막 변경 2018-07-01 19:58:44.889686017
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+
+# 타겟이 아님:
+.tex:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+prog.out: main.o choi.o kim.o lee.o
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  묵시적/고정 패턴 스템: 'prog'
+#  마지막 변경 2018-07-01 21:22:25.661637821
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+# 자동
+# @ := prog.out
+# 자동
+# % := 
+# 자동
+# * := prog
+# 자동
+# + := main.o choi.o kim.o lee.o
+# 자동
+# | := 
+# 자동
+# < := main.o
+# 자동
+# ^ := main.o choi.o kim.o lee.o
+# 자동
+# ? := main.o choi.o kim.o lee.o
+# 변수 모음 해시 테이블 통계:
+# 로드=8/32=25%, 다시 해시=0, 충돌=1/23=4%
+#  실행할 명령어 ('Makefile'에서, 2번째 줄):
+	gcc -Wall -W main.o choi.o kim.o lee.o -o prog.out
+
+# 타겟이 아님:
+.txinfo.info:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# 타겟이 아님:
+.sh:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	cat $< >$@ 
+	 chmod a+x $@
+
+main.o: main.c
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  묵시적/고정 패턴 스템: 'main'
+#  마지막 변경 2018-07-01 21:22:25.231643838
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+# 자동
+# @ := main.o
+# 자동
+# % := 
+# 자동
+# * := main
+# 자동
+# + := main.c
+# 자동
+# | := 
+# 자동
+# < := main.c
+# 자동
+# ^ := main.c
+# 자동
+# ? := main.c
+# 변수 모음 해시 테이블 통계:
+# 로드=8/32=25%, 다시 해시=0, 충돌=1/11=9%
+#  실행할 명령어 ('Makefile'에서, 5번째 줄):
+	gcc -Wall -W -c main.c
+
+# 타겟이 아님:
+.S.s:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(PREPROCESS.S) $< > $@
+
+# 타겟이 아님:
+.mod:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+# 타겟이 아님:
+.mod.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.mod) -o $@ $<
+
+# 타겟이 아님:
+.F.f:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# 타겟이 아님:
+.w:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.S.o:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(COMPILE.S) -o $@ $<
+
+# 타겟이 아님:
+.F:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+kim.c:
+#  묵시적 규칙 탐색이 완료되었습니다.
+#  마지막 변경 2018-07-01 19:58:44.889686017
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+
+# 타겟이 아님:
+.web:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.sym:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+.f:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+#  실행할 명령어 (내장):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 타겟이 아님:
+.info:
+#  내장 규칙
+#  묵시적 규칙 탐색이 완료되지 않았습니다.
+#  변경 시각이 결코 검사되지 않았음.
+#  파일을 업데이트하지 않았습니다.
+
+# 타겟이 아님:
+lee.c:
+#  묵시적 규칙 탐색이 완료되었습니다.
+#  마지막 변경 2018-07-01 20:44:55.373121922
+#  파일을 업데이트했습니다.
+#  성공적으로 업데이트.
+
+# 파일 해시 테이블 통계:
+# 로드=83/1024=8%, 다시 해시=0, 충돌=432/1612=27%
+# VPATH 탐색 경로
+
+# 'vpath' 탐색 경로가 없음.
+
+# 일반적인 ('VPATH' 변수) 탐색 경로가 없음.
+
+# strcache 버퍼: 1 (0) / 문자열 = 353 / 저장 공간 = 3559 B / 평균 = 10 B
+# 현재 버퍼: 크기 = 8174 B / 사용 = 3559 B / 개수 = 353 / 평균 = 10 B
+
+# strcache 효율: 검색 = 593 / 히트 비율 = 40%
+# 해시 테이블 통계:
+# 로드=353/8192=4%, 다시 해시=0, 충돌=189/593=32%
+# 메이크 데이터베이스 마침, Sun Jul  1 21:22:25 2018
+에서

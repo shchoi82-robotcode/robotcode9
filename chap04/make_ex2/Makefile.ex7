@@ -1,0 +1,15 @@
+SRCS = $(wildcard *.c)
+OBJECTS = $(SRCS:.c=.o)
+#OBJECTS = $(patsubst %.c, %.o, $(SRCS))
+TARGET = prog.out
+CC = gcc
+OPT = 
+CFLAGS = -Wall -W $(OPT)
+
+$(TARGET) : $(OBJECTS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+clean :
+	rm $(OBJECTS)
+	rm $(TARGET)
+

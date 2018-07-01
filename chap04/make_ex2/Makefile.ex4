@@ -1,0 +1,16 @@
+OBJECTS = main.o choi.o kim.o lee.o
+TARGET = prog.out
+CC = gcc
+CFLAGS = -Wall -W
+
+$(TARGET) : $(OBJECTS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+.SUFFIXES : .o .c
+%.o : %.c
+	$(CC) $(CFLAGS) -c $<
+
+clean :
+	rm $(OBJECTS)
+	rm $(TARGET)
+
