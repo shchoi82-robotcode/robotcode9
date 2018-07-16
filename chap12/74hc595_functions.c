@@ -13,6 +13,8 @@ int init(void)
     gpioSetMode(STR_CLK, PI_OUTPUT);
     gpioSetMode(SHR_CLK, PI_OUTPUT);
     gpioSetMode(SHR_CLEAR, PI_OUTPUT);
+    gpioWrite(SHR_CLEAR, 1); // clear
+
     return 1;
 }
 
