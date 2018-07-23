@@ -17,11 +17,20 @@ int main(void)
 
     init_max7219();
 
+    //srand(seed);
+    for (int j = 0; j < 10; j++) {
+        int r =  rand();
+        printf("%d\n", r);
+    }
+
+
     int c;
     int row = 1;
     int col = 1;
     dot_max7219(row, col);
     while((c = getc(stdin)) != EOF){
+        if(c == 'q' || c == 4)
+            break;
         switch(c){
             case 27:
                 c = getc(stdin);
@@ -34,6 +43,7 @@ int main(void)
                 }
                 break;
         }
+        if(c == 0) break;
         if(col > 8) col = 8;
         else if(col < 1) col = 1;
         else if(row > 8) row = 8;
